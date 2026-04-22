@@ -4,7 +4,7 @@ output:
   flexdashboard::flex_dashboard:
     orientation: rows
     vertical_layout: scroll
-    source_code: "https://github.com/chokatie/data555_final"
+    source_code: "https://github.com/chokatie/data555_final/blob/main/Part4a.Rmd"
 runtime: shiny
 ---
 
@@ -98,7 +98,7 @@ This dashboard compares severe maternal morbidity (SMM) risk across major U.S. r
 Row {data-height=380}
 -------------------------------------
 
-### **Figure 1: SMM Risk by Race** {data-width=70}
+### **Figure 1: Severe Maternal Morbidity Risk by Race** {data-width=70}
 
 ```{r bar-chart}
 bar1 <- brewer.pal(n = length(unique(smm_race$race)), name = "Dark2")
@@ -114,7 +114,7 @@ plot_ly(
 ) |>
   layout(
     title = list(
-      text = "Severe Maternal Morbidity Risk by Race",
+      text = "SMM Risk by Race",
       x = 0.5,
       xanchor = "center",
       font = list(
@@ -179,7 +179,7 @@ plot_ly(
 Row
 -------------------------------------
 
-### **Figure 2: SMM Trends Over Time** {data-width=75}
+### **Figure 2: Severe Maternal Morbidity Trends Over Time** {data-width=75}
 
 ```{r trend-chart}
 renderPlotly({
@@ -202,7 +202,7 @@ renderPlotly({
   ) |>
     layout(
       title = list(
-        text = "Time Trends in Severe Maternal Morbidity Risk, 2016–2022",
+        text = "Time Trends in SMM Risk, 2016–2022",
         x = 0.5,
         xanchor = "center",
         font = list(
@@ -297,7 +297,7 @@ Row {data-height=75}
 ### **Project Links**
 
 - [GitHub repository](https://github.com/chokatie/data555_final)
-- [README file](https://github.com/chokatie/data555_final#readme)
+- [README file](https://github.com/chokatie/data555_final/blob/main/README.md)
 
 **Data Description** {data-icon="fa-database"}
 ==============================================
