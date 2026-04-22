@@ -92,13 +92,15 @@ Row
 -------------------------------------
 
 ### **Overview**
+>  1. How do SMM risk rates differ across major US racial groups?  
+  2. How have SMM risks for these groups changed over time (2016–2022)?  
 
-This dashboard compares severe maternal morbidity (SMM) risk across major U.S. racial groups and shows how those risks changed from 2016 to 2022. Use the interactive charts below to explore racial disparities and time trends in SMM risk.
+*This dashboard compares severe maternal morbidity (SMM) risk across major U.S. racial groups and shows how those risks changed from 2016 to 2022. Use the interactive charts below to explore these questions.* <br><br>
 
 Row {data-height=380}
 -------------------------------------
 
-### **Figure 1: Severe Maternal Morbidity Risk by Race** {data-width=70}
+### **Figure 1** {data-width=70}
 
 ```{r bar-chart}
 bar1 <- brewer.pal(n = length(unique(smm_race$race)), name = "Dark2")
@@ -169,7 +171,7 @@ plot_ly(
   config(displayModeBar = TRUE)
 ```
 
-### **Key Findings** {data-width=30}
+### Key Findings {data-width=30}
 
 - White and Asian women have the lowest SMM risk prevalence in this dataset.
 
@@ -179,7 +181,7 @@ plot_ly(
 Row
 -------------------------------------
 
-### **Figure 2: Severe Maternal Morbidity Trends Over Time** {data-width=75}
+### **Figure 2** {data-width=75}
 
 ```{r trend-chart}
 renderPlotly({
@@ -253,7 +255,7 @@ renderPlotly({
 })
 ```
 
-### **Filters** {data-width=25}
+### Filters {data-width=25}
 
 ```{r filters}
 sliderInput(
@@ -277,7 +279,7 @@ checkboxGroupInput(
 Row
 -------------------------------------
 
-### **Key Findings**
+### Key Findings
 
 - Among the selected groups, SMM risk generally increases over time from 2016 to 2022.
 
@@ -294,7 +296,7 @@ Severe maternal morbidity is an important public health outcome as it reflects s
 
 Row {data-height=75}
 -------------------------------------
-### **Project Links**
+### *Project Links*
 
 - [GitHub repository](https://github.com/chokatie/data555_final)
 - [README file](https://github.com/chokatie/data555_final/blob/main/README.md)
