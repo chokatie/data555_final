@@ -116,7 +116,7 @@ plot_ly(
 ) |>
   layout(
     title = list(
-      text = "SMM Risk by Race",
+      text = "SMM Risk Rates across US Racial Groups",
       x = 0.5,
       xanchor = "center",
       font = list(
@@ -144,7 +144,7 @@ plot_ly(
     ),
     yaxis = list(
       title = list(
-        text = "SMM risk (%)",
+        text = "Risk (%)",
         font = list(
           family = "Arial Bold",
           size = 16,
@@ -231,7 +231,7 @@ renderPlotly({
       ),
       yaxis = list(
         title = list(
-          text = "SMM risk (%)",
+          text = "Risk (%)",
           font = list(
             family = "Arial Bold",
             size = 16,
@@ -259,7 +259,7 @@ renderPlotly({
 
 ```{r filters}
 sliderInput(
-  "year_range", "Select year range:",
+  "year_range", "Year range:",
   min   = min(yrs),
   max   = max(yrs),
   value = c(min(yrs), max(yrs)),
@@ -269,7 +269,7 @@ sliderInput(
 )
 
 checkboxGroupInput(
-  "race_sel", "Select race groups:",
+  "race_sel", "Race(s):",
   choices  = races,
   selected = c("Asian", "White"),
   inline   = FALSE
