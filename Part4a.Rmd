@@ -100,7 +100,7 @@ Row
 Row {data-height=380}
 -------------------------------------
 
-### **Figure 1** {data-width=70}
+### Figure 1 {data-width=70}
 
 ```{r bar-chart}
 bar1 <- brewer.pal(n = length(unique(smm_race$race)), name = "Dark2")
@@ -171,7 +171,7 @@ plot_ly(
   config(displayModeBar = TRUE)
 ```
 
-### Key Findings {data-width=30}
+### **Key Findings** {data-width=30}
 
 - White and Asian women have the lowest SMM risk prevalence in this dataset.
 
@@ -181,7 +181,7 @@ plot_ly(
 Row
 -------------------------------------
 
-### **Figure 2** {data-width=75}
+### Figure 2 {data-width=75}
 
 ```{r trend-chart}
 renderPlotly({
@@ -279,27 +279,26 @@ checkboxGroupInput(
 Row
 -------------------------------------
 
-### Key Findings
+### **Key Findings**
 
 - Among the selected groups, SMM risk generally increases over time from 2016 to 2022.
 
 - Asian women consistently have slightly higher SMM risk than White women over 2017–2022 (2016 was the only year where Asian women had lower SMM risk prevalence), however, the gap between the two groups remains relatively small and stable across years.
+<br><br>
 
 
 Row
 -------------------------------------
 
-### **Why Does This Matter?**
+### **Why Does This Matter?** {data-width=70}
 
 Severe maternal morbidity is an important public health outcome as it reflects serious pregnancy-related complications and can reveal inequities in maternal care. This dashboard helps identify racial disparities and time trends that may inform maternal health policy, equity-focused interventions, and quality improvement efforts.
+<br><br>
 
-
-Row {data-height=75}
--------------------------------------
-### *Project Links*
+### *Project Links* {data-width=30}
 
 - [GitHub repository](https://github.com/chokatie/data555_final)
-- [README file](https://github.com/chokatie/data555_final/blob/main/README.md)
+- Source code linked in Github repo & Dashboard *(upper right corner)* 
 
 **Data Description** {data-icon="fa-database"}
 ==============================================
